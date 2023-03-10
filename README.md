@@ -4,9 +4,7 @@ This repository contains a simple demonstration of using ROS and OpenCV to track
 
 The associated tutorial is available [here](https://youtu.be/gISSSbYUZag).
 
-Note that at present this repository will **not** work. There is a key script (`ball_tracker/process_image.py`) missing which cannot be distributed as it borrows heavily from [this file](https://github.com/tizianofiorenzani/ros_tutorials/blob/master/opencv/src/find_ball.py) which is not licensed for derivative works.
-
-In the future if permission is obtained or I rewrite the required functions from scratch, I will update this repo.
+Thanks very much to Tiziano Fiorenzani for his [ROS 1 tutorial](https://www.youtube.com/watch?v=We6CQHhhOFo) and [corresponding code](https://github.com/tizianofiorenzani/ros_tutorials/blob/master/opencv/src/find_ball.py) on which this repo is based (code reproduced with permission).
 
 One other thing to be wary of: this is a ROS/ament Python package, which means the launch and config files contained will be linked with the `--symlink-install` command for colcon, and will need to be rebuilt after changes.
 

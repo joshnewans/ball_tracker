@@ -8,6 +8,8 @@ Thanks very much to Tiziano Fiorenzani for his [ROS 1 tutorial](https://www.yout
 
 One other thing to be wary of: this is a ROS/ament Python package, which means the launch and config files contained will NOT be linked with the `--symlink-install` command for colcon, and will need to be rebuilt after changes.
 
+Remove warning triggers regarding setuptools by downgrading the version:
+`pip install setuptools==58.2.0`
 
 ## Getting started
 
